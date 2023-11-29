@@ -1,0 +1,374 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray  :#4E5150;
+    --gray-1:#333333;
+    --gray-2:#4F4F4F;
+    --gray-3:#828282;
+    --orange:#F2994A;
+    --gray-4:#BDBDBD;
+    --gray-6:#F2F2F2;
+}
+
+.container{
+
+    /* background-color: blueviolet; */
+    padding: 1rem;
+    
+    margin: auto;
+    max-width: 1200px;
+    /* height: 100vh; */
+
+}
+.contact-information-container{
+    width: 424px;
+    /* background-color: #F2994A; */
+    /* margin-bottom:1.1rem; */
+}
+
+.checkout-page-heading{
+    font-size: 2.25rem;
+    font-family: Montserrat;
+
+font-weight: 600;
+color: var(--gray);
+margin :1.125rem 0;
+text-align: left;
+
+}
+
+.container-heading{
+    font-family: Montserrat;
+font-size:1.125rem;
+font-weight: 600;
+line-height: 22px;
+color: var(--gray-1);
+margin-bottom: 0.934rem;
+text-align: left;
+
+
+}
+
+.input-text-with-label{
+    margin-bottom: 1.1rem;
+}
+.input-label{
+    font-family: Montserrat;
+font-size:0.75rem;
+color: var(--gray-2);
+font-weight: 600;
+
+text-align: left;
+
+}
+
+.icon-with-input-text{
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-top:7px ;
+    padding: 1rem;
+    border: 1px solid var(--gray-3);
+    border-radius: 12px;
+
+}
+input::placeholder {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 600;
+   
+    text-align: left;
+    color: var(--gray-3);    
+}
+
+.input-text{
+    color: var(--gray-1);
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+.material-symbols-outlined{
+    color:var(--gray-3);
+}
+
+.shipping-address-container{
+    width: 424px;
+    /* background-color: blanchedalmond;    */
+}
+
+#select-input{
+    color: var(--gray-3);
+    width: 217px;
+}
+
+select{
+    appearance: none;
+}
+
+.country-postal-code-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#postal-code{
+    /* gap: 0.1rem; */
+    width: 217px;
+    
+}
+.background-arrow{
+    padding: 0.2rem;
+    background-color: var(--gray-4);
+    border-radius: 6px;
+}
+
+.checkbox-with-label{
+    margin:0.1rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items:center;
+}
+
+.input-checkbox{
+    height: 21px;
+    width: 21px;
+    border: 1px solid #828282;
+}
+
+.input-checkbox-label{
+    font-family: Montserrat;
+font-size: 0.8REM;
+font-weight: 600;
+color: var(--gray-2);
+
+}
+
+.continue-button{
+    background-color: var(--orange);
+    color: white;
+    float: right;
+    border: none;
+    padding: 1.001rem 3.1rem;
+    border-radius: 12px;
+    font-family: Montserrat;
+font-size: 1rem;
+margin-top: 1rem;
+font-weight: 600;
+/* margin: auto; */
+
+}
+
+.form-container{
+    width: 100%;
+}
+.form-cart-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: self-start;
+    /* flex-wrap: wrap-reverse; */
+}
+
+.cart-container{
+    border-radius:12px;
+    width:500px;
+    height: 535px;
+    height: auto;
+    padding: 2.094rem;
+    background-color: var(--gray-6);
+}
+
+.product-in-cart{
+    gap: 0.5rem;
+    margin: 2rem 0;
+    display: flex;
+}
+.product-information{
+    /* background-color: aquamarine; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+margin-left: 1rem;
+    align-items: baseline;
+}
+
+.product-image{
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-name{
+    color: #4E5150;
+    font-family: Montserrat;
+font-size: 1rem;
+font-weight: 600;
+
+text-align: left;
+
+}
+
+.product-price{
+    font-family: Montserrat;
+font-size: 1rem;
+font-weight: 600;
+color: #F2994A;
+text-align: left;
+margin-top: 0.5rem;
+
+}
+
+.discounted-price{
+    font-family: Montserrat;
+font-size: 0.75rem;
+font-weight: 600;
+color: var(--gray);
+text-align: left;
+margin-left: 5px;
+/* position: relative; */
+text-decoration: line-through;
+
+}
+
+
+.product-quantity{
+    display: flex;
+    align-items: center;
+    /* border: ; */
+    gap: 1rem;
+    /* border: ; */
+    border: 1px solid #828282;
+    padding: 1rem;
+    border-radius: 6px;
+    border-radius: 12px;
+
+}
+.increment-decremnet-button{
+   
+    background-color: var(--gray-4);
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--gray-2);
+}
+
+.number-of-product-added-in-cart{
+    font-family: Montserrat;
+font-size: 1rem;
+font-weight: 600;
+
+
+}
+
+.shipping-container{
+    margin-top: 5rem;
+    border-top: 1px solid var(--gray-4);
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-1);
+}
+
+.shipping-heading{
+    font-family: Montserrat;
+font-size: 1.02rem;
+font-weight: 600;
+
+
+}
+
+.shipping-charges{
+
+    font-family: Montserrat;
+font-size: 0.9rem;
+font-weight: 600;
+
+}
+
+.total-container{
+    margin-top: 0.1rem;
+    border-top: 1px solid var(--gray-4);
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-1);
+}
+
+.total-heading{
+    font-family: Montserrat;
+font-size: 1.02rem;
+font-weight: 600;
+
+
+}
+
+.total-charges{
+
+    font-family: Montserrat;
+font-size: 0.9rem;
+font-weight: 600;
+
+}
+
+
+
+
+
+@media screen and (max-width : 800px) {
+
+    .container{
+
+        /* background-color: blueviolet; */
+        padding: 0.2rem;
+        
+        margin: auto;
+        width: 100%;
+        /* height: 100vh; */
+    
+    }
+
+    .contact-information-container{
+        width:100%;
+        /* marg */
+        /* background-color: #F2994A; */
+        /* margin-bottom:1.1rem; */
+    }
+    .form-container{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    
+    .shipping-address-container{
+        width: 100%;
+        /* background-color: blanchedalmond;    */
+    }
+
+    .cart-container{
+        border-radius:12px;
+        width: 100%;
+        /* height: 535px; */
+        height: auto;
+        padding: 2.094rem;
+        background-color: var(--gray-6);
+    }
+    .form-cart-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: self-start;
+        flex-wrap: wrap-reverse;
+    }
+    
+}
